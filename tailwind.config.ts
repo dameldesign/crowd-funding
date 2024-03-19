@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss"
 
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -25,8 +25,11 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          base: "#f4a931",
+            500: "#7668ba",
+            300: "#3bb1ce",
+            20: "#b4c170",
+            10: "#a64a85",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -53,10 +56,17 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        archivo: ["var(--font-archivo)"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "bg-dark": "url('/assets/images/auth-dark.png')",
+        "bg-light": "url('/public/assets/images/Bg_Line.png')",
       },
       keyframes: {
         "accordion-down": {
