@@ -1,6 +1,7 @@
 // import Navbar from '@/components/common/Navbar';
 import Image from 'next/image';
 import Footer from '../../components/Footer';
+import Navbar from '../../components/shared/Navbar';
 
 export default function RootLayout({
 	children,
@@ -20,7 +21,7 @@ export default function RootLayout({
 
 					</div>
 
-			{/* <Navbar /> */}
+			<Navbar />
 			{children}
 			<Footer />
 		</main>

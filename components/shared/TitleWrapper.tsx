@@ -11,7 +11,7 @@ export default function TitleWrapper({
 	return (
 		<h1
 			className={cn(
-				'sm:text-4xl text-2xl leading-5 flex flex-col gap-3 text-zinc-800 sm:leading-7 text-center font-bold',
+				'sm:text-6xl text-2xl leading-5 flex flex-col gap-3 text-zinc-800  text-center font-bold',
 				className
 			)}
 		>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaFacebook, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import FundLogo from '../public/Fund.io-000.png';
+import FundLogo from '../public/fund.png';
 import { Button } from './ui/button';
 import Image from 'next/image';
 import ContextWrapper from './shared/ContextWrapper';
