@@ -159,10 +159,10 @@ const Signup = () => {
       </Form>
       <Link
         href=""
-        className="flex items-center justify-center gap-2 w-full m-h-11 py-3 bg-blue-500 rounded-xl shadow border border-gray-300"
+        className="flex items-center justify-center gap-2 w-full m-h-11 py-3 text-white bg-primary-10 rounded-xl shadow border border-primary-10/30"
       >
         <Image
-          src="/assets/icons/fb.svg"
+          src="/assets/svg/fb.svg"
           alt="facebook"
           width={24}
           height={24}
@@ -177,7 +177,7 @@ const Signup = () => {
         className="flex items-center justify-center gap-2 w-full m-h-11 py-3 bg-white rounded-xl shadow border border-gray-300"
       >
         <Image
-          src="/assets/icons/gl.svg"
+          src="/assets/svg/gl.svg"
           alt="google"
           width={24}
           height={24}
