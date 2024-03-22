@@ -1,5 +1,6 @@
 // import AuthHeader from "@/components/shared/header/AuthHeader";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   // title: "ConnectNigeria Onboarding",
@@ -14,9 +15,18 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <main className="relative">
       {/* <AuthHeader /> */}
-      <div className="flex bg-gray-100">
+      <div className=" absolute  isolate -z-10  inset-0">
+        <Image
+          className=" w-full h-full object-cover object-[70%,85%]"
+          src={"/assets/images/Bg_Line.png"}
+          alt="cover picture"
+          width={328}
+          height={216}
+        />
+      </div>
+      <div className="flex ">
         <section className="flex min-h-screen flex-1 flex-col justify-center items-center">
-          <div className="flex w-full max-w-[480px] justify-center items-center">
+          <div className="flex w-full  max-w-[480px] justify-center items-center">
             {children}
           </div>
         </section>

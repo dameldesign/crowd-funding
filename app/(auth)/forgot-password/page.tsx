@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="max-w-[480px] p-10 bg-white rounded-xl shadow flex-col justify-start items-end gap-4 flex">
+    <div className="max-w-[480px] p-10 bg-white rounded-xl shadow-xl flex-col justify-start items-end gap-4 flex">
       <div className="flex-col justify-start items-center gap-6 flex">
         <p className="text-slate-900 text-3xl font-bold leading-loose">
           Forgot password?
