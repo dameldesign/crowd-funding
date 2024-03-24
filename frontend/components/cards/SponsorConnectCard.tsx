@@ -4,6 +4,7 @@ import { Clock3, MapPin } from "lucide-react";
 import { formatAndDivideNumber, formatDateRange } from "@/lib/utils";
 // import { Rating } from "react-simple-star-rating";
 import Link from "next/link";
+import { BsTools } from "react-icons/bs";
 interface SponsorConnectCardProps {
   title: string;
   slug: string;
@@ -79,7 +80,7 @@ const SponsorConnectCard: FC<SponsorConnectCardProps> = ({
           <div className="flex w-full justify-between items-center flex-row">
             <div className="flex w-full justify-start gap-2">
               <h1
-                className="text-[16.16px] font-medium "
+                className="text-[16.16px] text-black/65 font-medium "
                 style={{
                   whiteSpace: "nowrap",
                   overflow: "hidden",
@@ -189,13 +190,7 @@ const SponsorConnectCard: FC<SponsorConnectCardProps> = ({
             {company && (
               <div className="flex flex-row gap-1 items-center justify-center">
                 <span className="p-[2px] bg-[#6C727F] rounded-full"></span>
-                <Image
-                  alt="icon"
-                  src="/assets/icons/mdi_company.svg"
-                  width={16}
-                  height={16}
-                  className="h-[10px] w-[10px]"
-                />
+<BsTools />
                 <h1
                   className="text-[12px] font-normal text-[#6C727F] "
                   style={{

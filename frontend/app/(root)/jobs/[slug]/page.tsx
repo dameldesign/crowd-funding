@@ -8,7 +8,7 @@ import { popularProject } from "@/constants/home";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import FundImage from "/public/assets/images/notfound.png";
+// import {FundImage } from "@/public/assets/images/notfound.png";
 
 
 // import {
@@ -42,7 +42,7 @@ const CarDetails = () => {
           height={208}
           className="min-w-full object-cover rounded-xl"
           quality={100}
-          src={FundImage}
+          src="/assets/images/notfound.png"
           alt="hero_image"
         />
       </div>

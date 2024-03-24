@@ -36,7 +36,7 @@ export default function JobsSponsorComponent() {
   }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
 
   return (
-    <section className="w-[75vw] flex flex-col py-6">
+    <section className=" w-[80vw] flex flex-col py-6">
       <div className="flex flex-row justify-between item-start">
         <h1 className="text-base mb-4 text-black font-semibold">
           Recently Invested
@@ -76,7 +76,7 @@ export default function JobsSponsorComponent() {
             key={`${index}-1`}
             slug={`/jobs/${popular.slug}`}
             title={popular.label}
-            body="Full-time"
+            body="Global impact"
             imageUrl={popular.imgURL}
             company={popular.company}
             jobsFees={popular.jobsFees}
@@ -85,10 +85,11 @@ export default function JobsSponsorComponent() {
             key={`${index}-2`}
             slug={`/jobs/${popular.slug}`}
             title={popular.label}
-            body="Full-time"
+            body="Global impact"
             imageUrl={popular.imgURL}
             company={popular.company}
             jobsFees={popular.jobsFees}
+            
           />,
         ])}
       </div>

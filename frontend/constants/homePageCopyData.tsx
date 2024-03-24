@@ -2,7 +2,7 @@
 `./assets/images` directory. These icons and images are then used in the `services` and
 `testimonial` arrays. */
 import { MdOutlineLanguage } from 'react-icons/md';
-import { FaTools } from 'react-icons/fa';
+import { FaMoneyCheck, FaTools } from 'react-icons/fa';
 import { VscServerProcess } from 'react-icons/vsc';
 import { GiOffshorePlatform } from 'react-icons/gi';
 
@@ -10,6 +10,7 @@ import TestimoniaOne from '../public/assets/images/testimonial_01.webp';
 import TestimoniaTwo from '../public/assets/images/testimonial_02.webp';
 import TestimoniaThree from '../public/assets/images/testimonial_03.webp';
 import TestimoniaFour from '../public/assets/images/testimonial_04.webp';
+import { List, Users } from 'lucide-react';
 
 export const services = [
 	{
@@ -17,44 +18,48 @@ export const services = [
 		icon: <MdOutlineLanguage color="white" />,
 	},
 	{
-		text: 'We give Actors the language tools to adapt to their roles. Teaches speech and mannerisms of any language you need for roles.',
-		icon: <FaTools color="white" />,
+		text: 'Users can connect with like-minded individuals within the tech community.',
+		icon: <Users color="white" />,
 	},
 	{
-		text: 'We create a process that converts existing education and professions of refugees to reusuable skills that makes them a credit to their host countries.',
+		text: 'We provide access to resources essential for project development and growth',
 		icon: <VscServerProcess color="white" />,
 	},
 	{
-		text: 'We equip investors with essential tools for strategic investments in their target countries, fostering informed and successful financial decisions.',
-		icon: <FaTools color="white" />,
+		text: 'Our platform enables users to showcase their tech-related projects',
+		icon: <List color="white" />,
 	},
 	{
-		text: 'IELTS platform tailored for aspiring students and professionals seeking migration opportunities, facilitating success through expertise and resources.',
+		text: 'We serve as a central hub for tech enthusiasts, innovators, and entrepreneurs',
 		icon: <GiOffshorePlatform color="white" />,
+	},
+	{
+		text: 'We facilitate attracting financial support from donors and investors',
+		icon: <FaMoneyCheck  color="white" />,
 	},
 ];
 
 export const testimonial = [
 	{
-		text: 'I am currently learning English language with Lektore and the experience has been wonderful, the tutors are amazing and they make learning a thrilling fun experience.',
+		text: 'Fund.io has been instrumental in helping me secure funding for my tech startup. Their platform provided valuable resources and connections that I couldnt find elsewhere.',
 		name: 'Alohi Akua',
 		profession: 'Engineer',
 		image: TestimoniaThree,
 	},
 	{
-		text: 'My name is Xiu, i have been having issues settling into a new country because of my phonetics, i registered with Lektore and i improved greatly, the tutors are amazing and i recommend them for eveyone.',
+		text: 'My name is Xiu, i have  been a member of Fund.io for over a year now, and I cant recommend it enough. The community is incredibly supportive, and the team behind the platform is always innovating to provide better opportunities for tech enthusiasts like me.',
 		name: 'Xiu Muchen',
 		profession: 'Student',
 		image: TestimoniaFour,
 	},
 	{
-		text: 'Lektore has been a life changer for me, they helped improved my English language and i can now communicate better without fears of language barrier.',
+		text: 'Fund.io helped me turn my tech idea into a reality. From connecting me with the right mentors to providing valuable feedback, their platform guided me through every step of the startup journey. Im grateful for their support!',
 		name: 'Amir Esrafil',
 		profession: 'Software Developer',
 		image: TestimoniaOne,
 	},
 	{
-		text: 'I joined Lektore and my public speaking and overall knowledge in English improved, thanks to Lektore.',
+		text: 'As an investor, Ive had an amazing experience with fund.io. Their platform makes it easy to discover promising tech projects and connect with passionate founders. Ive made several successful investments through their platform.',
 		name: 'Kim Ryder',
 		profession: 'Dentist',
 		image: TestimoniaTwo,

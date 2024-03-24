@@ -13,8 +13,6 @@ import {
 import ExploreMore from "@/components/category/explore-more";
 import { GeneralSmallAdvert } from "@/components/category/general-small-ad";
 import { popularJobs, popularProject } from "@/constants/home";
-
-import LandscapeConnectCard from "@/components/cards/LandscapeConnectCard";
 import JobsSponsorComponent from "./SponsorComponent";
 import GridFundCard from "@/components/cards/GridFundCard";
 import LandscapeFundCard from "@/components/cards/LanscapeFundCard";
@@ -68,7 +66,7 @@ const JobsOverview = () => {
           <div className="relative">
             <button
               onClick={toggleDropdown}
-              className="px-3 py-1 border w-[141px] capitalize h-[40px] rounded-xl flex text-sm text-black font-medium items-center justify-between"
+              className="px-3 py-1 border w-[121px] capitalize h-[40px] rounded-xl flex text-sm text-black font-medium items-center justify-between"
             >
               {selectedOption || "All"}
               <ChevronDown
@@ -97,9 +95,9 @@ const JobsOverview = () => {
             )}
           </div>
           {/* switch layout button */}
-          <div className=" bg-slate-400 rounded-xl flex items-center  justify-center ">
+          <div className=" bg-gray-200/50 rounded-xl flex items-center  justify-center ">
             <button
-              className={`p-2  text-white rounded-xl ${
+              className={`p-2  text-black rounded-xl ${
                 layout === "card1" ? "bg-primary-base text-white" : ""
               }`}
               onClick={() => setLayout("card1")}
@@ -107,7 +105,7 @@ const JobsOverview = () => {
               <Table size={15} />
             </button>
             <button
-              className={`p-2 text-white rounded-xl  ${
+              className={`p-2 text-black rounded-xl  ${
                 layout === "card2" ? "bg-primary-base text-white" : ""
               }`}
               onClick={() => setLayout("card2")}
@@ -161,7 +159,7 @@ const JobsOverview = () => {
         )}
 
         {layout === "card2" && (
-          <div className="max-w-[1320px] flex  gap-y-6 space-y-6 flex-wrap  cursor-pointer flex-row">
+          <div className="max-w-[1300px] flex  gap-y-6 space-y-6 flex-wrap  cursor-pointer flex-row">
 
 {popularProject
               .filter(

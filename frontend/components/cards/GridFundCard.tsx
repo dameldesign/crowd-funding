@@ -90,15 +90,15 @@ interface GridFundCardProps {
           </div>
           <div className="flex flex-col h-auto justify-between  items-start px-2  rounded-b-[12px] ">
             <div className="flex w-full justify-between items-center flex-row">
-              <div className="flex w-[75%] justify-start gap-2">
+              <div className="flex w-[85%] justify-start gap-2">
                 <h1
-                  className="text-[20.16px] font-medium "
+                  className="text-[18.16px] font-medium "
                   style={{
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
-                    maxWidth: "75%",
-                    width: "75%",
+                    maxWidth: "85%",
+                    width: "85%",
                   }}
                 >
                   {projectName}

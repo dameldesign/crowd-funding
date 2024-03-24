@@ -64,7 +64,7 @@ export default function Navbar() {
               aria-hidden={isHidden}
               className="flex gap-8 ml-auto bg-white lg:bg-transparent w-full lg:w-max pt-4 lg:pt-0 pb-12 lg:pb-0 lg:h-auto h-screen [&[aria-hidden='true']]:translate-y-[-100px] [&[aria-hidden='true']]:opacity-0 [&[aria-hidden='true']]:pointer-events-none transition-transform lg:[&[aria-hidden='true']]:pointer-events-auto lg:[&[aria-hidden='true']]:opacity-100 lg:[&[aria-hidden='true']]:translate-y-0 pointer-events-auto translate-y-0 opacity-100  right-0 px-[4%] lg:px-0 lg:items-center lg:transition-none lg:relative fixed lg:flex-row flex-col top-full"
             >
-              {["home", "courses", "contact"].map((route) => (
+              {["home", "projects", "contact"].map((route) => (
                 <Link
                   className="text-sm hover:text-primary-base hover:font-semibold transition-all capitalize"
                   key={route}

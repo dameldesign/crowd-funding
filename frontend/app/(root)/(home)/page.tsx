@@ -17,6 +17,7 @@ import {
 } from "../../../components/shared/CardWrapper";
 import { services, testimonial } from "../../../constants/homePageCopyData";
 import Slider from "../../../components/shared/Slider";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -47,12 +48,18 @@ export default function Home() {
             </span>
             {/* Action buttons */}
             <div className="flex items-center mt-4 gap-6">
+              <Link href="/jobs">
               <Button className="text-xs sm:text-sm font-normal bg-transparent bg-primary-base px-6 text-white hover:bg-primary-base/80 border">
                 Check StartUps
               </Button>
+              
+              </Link>
+              <Link href="https://medium.com/@Frandal/fund-io-18d80d5803bc">
               <Button className="text-xs sm:text-sm font-normal bg-white px-6 text-zinc-800 shadow hover:bg-primary-10 hover:text-white">
                 Learn more
               </Button>
+              
+              </Link>
             </div>
           </>
         </ContextWrapper>
@@ -116,9 +123,12 @@ export default function Home() {
           </span>
 
           {/* Action Button */}
+          <Link href="signup">
+          
           <Button className="text-sm font-normal bg-transparent bg-primary-500 px-8 text-white hover:bg-primary-500/80 border">
             Register
           </Button>
+          </Link>
         </ContextWrapper>
       </section>
 
