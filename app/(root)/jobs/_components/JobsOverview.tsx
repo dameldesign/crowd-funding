@@ -97,7 +97,7 @@ const JobsOverview = () => {
             )}
           </div>
           {/* switch layout button */}
-          <div className=" bg-primary-20 rounded-xl flex items-center  justify-center ">
+          <div className=" bg-slate-400 rounded-xl flex items-center  justify-center ">
             <button
               className={`p-2  text-white rounded-xl ${
                 layout === "card1" ? "bg-primary-base text-white" : ""
