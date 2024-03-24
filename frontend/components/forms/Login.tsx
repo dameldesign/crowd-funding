@@ -111,7 +111,7 @@ const Login = () => {
             </div>
             <div className="w-full text-center">
               <span className="text-gray-500 text-xs font-normal leading-tight">
-                Proceeding, you agree to Connect Nigeria{" "}
+                Proceeding, you agree to Fund.Io{" "}
               </span>
               <Link
                 href="/"
