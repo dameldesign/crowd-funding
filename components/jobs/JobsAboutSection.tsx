@@ -128,7 +128,7 @@ const statusClass = cn({
         <div className="flex justify-between items-start">
           <h2 className="flex gap-2 items-center text-primary-300 font-bold mb-4 text-3xl">
             {projectName}
-            <div className={statusClass}>
+             <div className={statusClass}>
     {/* Your content here */}
  </div>
           </h2>
