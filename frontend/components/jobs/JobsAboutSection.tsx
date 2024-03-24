@@ -2,7 +2,7 @@
 import { formatAndDivideNumber } from "@/lib/utils";
 import { ICategoryDetails } from "@/types";
 import { Category, Status } from "@/types";
-import { CheckCheck, Globe, Hourglass, NotebookPen, TimerReset } from "lucide-react";
+import { CalendarDaysIcon, CheckCheck, Globe, Hourglass, NotebookPen, TimerReset } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -179,7 +179,7 @@ const JobsAboutSection: React.FC<FundProps> = ({
           </div>
         </div>
         <p className="flex items-center gap-1 text-grey-100 mb-2">
-          <TimerReset />
+          <CalendarDaysIcon />
           {`${timeline} Project Duration `}
         </p>
         
