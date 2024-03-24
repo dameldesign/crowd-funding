@@ -85,7 +85,18 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.scrollbar-hide': {
+          scrollbarWidth: 'none',
+          scrollbarColor: 'transparent transparent',
+        },
+      }
+      addUtilities(newUtilities)
+    }
+ ],
 } satisfies Config
 
 export default config

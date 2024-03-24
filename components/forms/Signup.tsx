@@ -25,8 +25,8 @@ const Signup = () => {
     defaultValues: {
       name: "",
       email: "",
-      mobile: "",
       password: "",
+      confirmPassword: "",
     },
   });
 
@@ -59,7 +59,7 @@ const Signup = () => {
                       {...field}
                     />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-red-600" />
                 </FormItem>
               )}
             />
@@ -76,24 +76,7 @@ const Signup = () => {
                       {...field}
                     />
                   </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="mobile"
-              render={({ field }) => (
-                <FormItem className="flex w-full flex-col">
-                  <FormControl>
-                    <Input
-                      type="text"
-                      className="min-h-[54px] no-focus bg-light-900 rounded-xl border border-light-700"
-                      placeholder="Your Mobile Number"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-red-600" />
                 </FormItem>
               )}
             />
@@ -110,7 +93,24 @@ const Signup = () => {
                       {...field}
                     />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-red-600" />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="confirmPassword"
+              render={({ field }) => (
+                <FormItem className="flex w-full flex-col">
+                  <FormControl>
+                    <Input
+                      type="password"
+                      className="min-h-[54px] no-focus bg-light-900 rounded-xl border border-light-700"
+                      placeholder="Retype Password"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage className="text-red-600" />
                 </FormItem>
               )}
             />

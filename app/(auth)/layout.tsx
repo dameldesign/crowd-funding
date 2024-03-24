@@ -17,7 +17,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       {/* <AuthHeader /> */}
       <div className=" absolute  isolate -z-10  inset-0">
         <Image
-          className=" w-full h-full object-cover object-[70%,85%]"
+          className=" w-full h-screen object-cover object-[70%,0%]"
           src={"/assets/images/Bg_Line.png"}
           alt="cover picture"
           width={328}
