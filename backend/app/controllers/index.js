@@ -2,11 +2,9 @@
 // it will be used by any DApp, so we are already including it here
 const { ethers } = require("ethers");
 const { viem } = require("viem");
-// const user = require("./user/profile.controller");
-const gameCharacters = require("./user/game_characters");
-const battleChallenge = require("./user/battle_challenge");
 const marketplace = require("./user/marketplace");
 const user = require("./user/user.controllers");
+const project = require("./user/project.controller");
 var erc20abi = require("../utils/contract.json");
 // const { allUsers, createUser, Player, totalUsers } = user;
 // const { allCharacters, totalCharacters, Character, createTeam, resolveCharacters} = gameCharacters;
@@ -113,6 +111,43 @@ async function handle_advance(data) {
       console.log("getting  profile....");
       console.log("user profile: " + JSON.stringify(user));
     }
+
+    //{"method":"create_project","char1": 1,"char2": 8, "char3": 5}
+    else if (JSONpayload.method === "create_project") {
+      console.log("creating project....");
+      const projects = project.createProject(
+        JSONpayload.category,
+        JSONpayload.projectName,
+        JSONpayload.projectSummary,
+        JSONpayload.total_amount,
+        JSONpayload.methodology,
+        JSONpayload.appendices,
+        JSONpayload.expectedDeliverables,
+        JSONpayload.milestones,
+        JSONpayload.timeline,
+        JSONpayload.team,
+        JSONpayload.projectDocumentation,
+        JSONpayload.securityMeasures,
+        JSONpayload.technicalChallenges,
+        JSONpayload.solution,
+        JSONpayload.community,
+        JSONpayload.scope,
+        JSONpayload.fairness,
+        JSONpayload.logoURI,
+      );
+      console.log("created project is:", projects);
+
+      totalTransactions++
+
+    // return an updated array of all players
+    let allProjects = project.allProjects;
+    const result = JSON.stringify({"method": "all_Users", "txId": totalTransactions, "target": data.metadata.msg_sender, "data": allProjects });
+    advance_req = await emitNotice(result);
+
+
+  //{"method":"get_user", "user": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"}
+  // NOTE: replace the address in user above with your own address.
+  }
 
     //{"method":"create_project","char1": 1,"char2": 8, "char3": 5}
     else if (JSONpayload.method === "create_team") {
