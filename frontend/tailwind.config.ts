@@ -31,6 +31,7 @@ const config: Config = {
             20: "#b4c170",
             10: "#a64a85",
         },
+        links: "#3bb1ce",
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -84,7 +85,18 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.scrollbar-hide': {
+          scrollbarWidth: 'none',
+          scrollbarColor: 'transparent transparent',
+        },
+      }
+      addUtilities(newUtilities)
+    }
+ ],
 } satisfies Config
 
 export default config

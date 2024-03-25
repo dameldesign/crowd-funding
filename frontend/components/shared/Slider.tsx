@@ -48,15 +48,15 @@ export default function Slider({
 			<div className="w-full flex items-center px-[8%] justify-between mt-6">
 				<Button
 					onClick={() => handleScrollContainer('left')}
-					className="rounded-full bg-[#f4a931]"
+					className="rounded-full bg-primary-base"
 				>
-					<BsArrowLeftShort className="text-xl" />
+					<BsArrowLeftShort className="text-xl text-white " />
 				</Button>
 				<Button
 					onClick={() => handleScrollContainer('right')}
-					className="rounded-full bg-[#f4a931]"
+					className="rounded-full bg-primary-base"
 				>
-					<BsArrowRightShort className="text-xl" />
+					<BsArrowRightShort className="text-xl text-white " />
 				</Button>
 			</div>
 		</div>
