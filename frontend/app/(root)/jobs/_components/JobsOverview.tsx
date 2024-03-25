@@ -52,10 +52,7 @@ const JobsOverview = () => {
     }
   };
 
-  // Type guard function to check if an object is of type Category
-  function isCategory(obj: any): obj is Category {
-    return obj && typeof obj.name === "string";
-  }
+
 
   console.log("Rendering page: " + activePage);
 
