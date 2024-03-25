@@ -19,6 +19,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { WalletIcon } from "lucide-react";
 
 const Login = () => {
   const router = useRouter();
@@ -156,15 +157,9 @@ const Login = () => {
         href=""
         className="flex items-center justify-center gap-2 w-full m-h-11 py-3 text-white bg-primary-10 rounded-xl shadow border border-primary-10/30"
       >
-        <Image
-          src="/assets/svg/fb.svg"
-          alt="facebook"
-          width={24}
-          height={24}
-          className="object-contain mr-4"
-        />
+        <WalletIcon />
         <p className="text-light-900 text-base font-semibold ml-7">
-          Continue with Facebook
+          Continue with Wallet 
         </p>
       </Link>
       <Link
