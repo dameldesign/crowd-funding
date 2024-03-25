@@ -10,12 +10,12 @@ import {
   Equal,
   X,
 } from "lucide-react";
-import ExploreMore from "@/components/category/explore-more";
 import { GeneralSmallAdvert } from "@/components/category/general-small-ad";
-import { popularJobs, popularProject } from "@/constants/home";
 import JobsSponsorComponent from "./SponsorComponent";
-import GridFundCard from "@/components/cards/GridFundCard";
+import ExploreMore from "@/components/category/explore-more";
+import { popularProject } from "@/constants/home";
 import LandscapeFundCard from "@/components/cards/LanscapeFundCard";
+import GridFundCard from "@/components/cards/GridFundCard";
 
 const JobsOverview = () => {
   const pathname = usePathname();
