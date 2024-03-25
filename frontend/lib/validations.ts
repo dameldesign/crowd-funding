@@ -32,19 +32,12 @@ export const SignupSchema = z.object({
            "Password must be at least 6 characters long and contain at least one number and one uppercase letter.",
        }
      ),
-  confirmPassword: z.string()
-     .min(6)
-     .superRefine((confirmPass, context) => {
-       const password = context.data.password;
-       if (confirmPass !== password) {
-         context.addIssue({
-           code: "custom",
-           message: "Passwords do not match.",
-           path: [...context.path, "confirmPassword"],
-         });
-       }
-     }),
- });
+     confirmPassword: z.string().min(6),
+    }).refine(data => data.password === data.confirmPassword, {
+     message: "Passwords do not match.",
+     path: ["confirmPassword"], // This path is used to indicate where the error occurred
+    });
+
 
 export const ForgotPasswordSchema = z.object({
   email: z.string().email(),

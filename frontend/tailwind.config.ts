@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config, } from "tailwindcss";
 
 const config: Config = {
   darkMode: ["class"],
@@ -93,10 +93,11 @@ const config: Config = {
           scrollbarWidth: 'none',
           scrollbarColor: 'transparent transparent',
         },
-      }
-      addUtilities(newUtilities)
-    }
+      };
+      addUtilities(newUtilities);
+    },
  ],
-} satisfies Config
+};
+
 
 export default config

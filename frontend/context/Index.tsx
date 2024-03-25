@@ -9,7 +9,7 @@ import React, {
 } from "react";
 import { defaultDappAddress } from "../utils/constants";
 import { useConnectWallet } from "@web3-onboard/react";
-import { useNotices } from "../components/useNotices";
+import { useNotices } from "@/common/useNoticess";
 import { Address } from "@web3-onboard/core/dist/types";
 // import {
 //   SUMMARY_HISTORY_CACHE_NAME,
@@ -126,7 +126,7 @@ interface ICurrentUser {
   bio: string;
 }
 
-const PeepsProvider: React.FC<PeepsProviderProps<any>> = ({
+const PeepsProvider: React.FC<PeepsProviderProps> = ({
   children,
 }: PeepsProviderProps) => {
   const [baseDappAddress, setBaseDappAddress] =
