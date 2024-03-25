@@ -117,7 +117,6 @@ function createProject(
     solution,
     community,
     scope,
-    fairness,
     logoURI,
     ) {
     //check if project already exist
