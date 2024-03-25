@@ -23,7 +23,7 @@ class Project {
         projectName, projectSummary, scope, total_amount,
         methodology, appendices, expectedDeliverables, milestones,
         timeline, team, projectDocumentation, securityMeasures, fairness,
-        marketFit, tokenomics, technicalChallenges, solution, community,
+        marketFit, tokenomics, technicalChallenges, solution, community, user_id,
        logoURI
         ) {
         this.category = category;
@@ -51,6 +51,8 @@ class Project {
         this.marketFit = marketFit;
         this.tokenomics = tokenomics;
         this.id = 0;
+        this.projectBalance = 0;
+        this.user_id = user_id;
      }
 
     displayInfo() {
@@ -78,6 +80,8 @@ class Project {
             Monika: ${this.status}
             logoURI: ${this.logoURI}
             id: ${this.id}
+            projectBalance: ${this.projectBalance}
+            user_id: ${this.user_id}
         `);
     }
 
@@ -85,12 +89,12 @@ class Project {
         this.id = id;
     }
 
-    modifyMonika( newMonika) {
-        this.Monika = newMonika;
+    setBalance(projectBalance){
+        this.projectBalance = projectBalance;
     }
 
-    modifyAvatar( newAvatar ) {
-        this.logoURI = newAvatar;
+    modifyLogo( newLogo ) {
+        this.logoURI = newLogo;
     }
 }
 
@@ -115,7 +119,6 @@ function createProject(
     scope,
     fairness,
     logoURI,
-
     ) {
     //check if project already exist
     if(findProject(allProjects, id)) {
