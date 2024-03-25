@@ -31,7 +31,7 @@ import {
     ERC1155SinglePortal__factory,
     ERC1155BatchPortal,
     ERC1155BatchPortal__factory
-} from "./generated/rollups";
+} from "@/components/generated/rollups";
 import { ConnectedChain } from "@web3-onboard/core";
 
 import configFile from "../config.json";
