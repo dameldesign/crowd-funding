@@ -52,6 +52,11 @@ const JobsOverview = () => {
     }
   };
 
+  // Type guard function to check if an object is of type Category
+  function isCategory(obj: any): obj is Category {
+    return obj && typeof obj.name === "string";
+  }
+
   console.log("Rendering page: " + activePage);
 
   return (
@@ -125,8 +130,11 @@ const JobsOverview = () => {
               .filter(
                 (project) =>
                   selectedOption === "All" ||
-                  project.category.includes(selectedOption)
+                  project.category.some(
+                    (category) => category === selectedOption
+                  )
               )
+
               .flatMap((popular, index) => [
                 <GridFundCard
                   key={`${index}-1`}
@@ -160,13 +168,15 @@ const JobsOverview = () => {
 
         {layout === "card2" && (
           <div className="max-w-[1300px] flex  gap-y-6 space-y-6 flex-wrap  cursor-pointer flex-row">
-
-{popularProject
+            {popularProject
               .filter(
                 (project) =>
                   selectedOption === "All" ||
-                  project.category.includes(selectedOption)
+                  project.category.some(
+                    (category) => category === selectedOption
+                  )
               )
+
               .flatMap((popular, index) => [
                 <LandscapeFundCard
                   key={index}
@@ -188,7 +198,7 @@ const JobsOverview = () => {
                   category={popular.category}
                   marketFit={popular.marketFit}
                   // ... pass the rest of the props as needed
-                />
+                />,
               ])}
           </div>
         )}
