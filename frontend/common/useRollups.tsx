@@ -57,6 +57,7 @@ export const useRollups = (dAddress: string): RollupsContracts | undefined => {
     const [{ connectedChain }] = useSetChain();
     const [connectedWallet] = useWallets();
     const [dappAddress] = useState<string>(dAddress);
+    
 
     useEffect(() => {
         const connect = async (
