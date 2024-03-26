@@ -97,7 +97,7 @@ const JobsOverview = () => {
             )}
           </div>
           {/* switch layout button */}
-          <div className=" bg-gray-200/50 rounded-xl flex items-center  justify-center ">
+          <div className=" bg-gray-200/50 rounded-xl hidden lg:flex items-center  justify-center ">
             <button
               className={`p-2  text-black rounded-xl ${
                 layout === "card1" ? "bg-primary-base text-white" : ""
@@ -120,9 +120,9 @@ const JobsOverview = () => {
       {/*  */}
 
       {/* single card starts here */}
-      <div className="max-w-[1555px] w-full">
+      <div className="max-w-[1555px] w-auto mx-auto flex flex-col items-center justify-center">
         {layout === "card1" && (
-          <div className="grid grid-cols-[repeat(auto-fill,_minmax(260px,_1fr))] gap-10 mt-2 w-full cursor-pointer">
+          <div className="grid grid-cols-[repeat(auto-fill,_minmax(260px,_1fr))] gap-10 mt-2 mx-auto w-full cursor-pointer">
             {popularProject
               .filter(
                 (project) =>

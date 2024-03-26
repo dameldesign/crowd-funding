@@ -30,7 +30,7 @@ export default function Navbar() {
           />
         </div>
         <h1 className="text-xs text-white">
-          This banner bar can be used to inform vistors of something important.
+        This Application was build using Cartesi 
         </h1>
         <div>
           <Image
