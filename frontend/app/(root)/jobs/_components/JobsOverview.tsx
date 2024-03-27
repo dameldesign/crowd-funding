@@ -120,7 +120,7 @@ const JobsOverview = () => {
       {/*  */}
 
       {/* single card starts here */}
-      <div className="max-w-[1555px] w-auto mx-auto flex flex-col items-center justify-center">
+      <div className="max-w-[1555px] w-auto lg:w-full mx-auto flex flex-col items-center justify-center">
         {layout === "card1" && (
           <div className="grid grid-cols-[repeat(auto-fill,_minmax(260px,_1fr))] gap-10 mt-2 mx-auto w-full cursor-pointer">
             {popularProject

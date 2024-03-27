@@ -87,7 +87,7 @@ export const popularProject: mapBackendStructure[] = [
       "Environmental Scientists",
     ],
     slug: "ecotech-solutions",
-    projectDocumentation: "https://www.getprospa.com/webstore/shoesbybecky",
+    projectDocumentation: "https://www.servustech.com",
     securityMeasures: "Data encryption, access control",
     fairness: "Transparent selection process",
     technicalChallenges: [
